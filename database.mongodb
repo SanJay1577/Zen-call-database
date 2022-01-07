@@ -1,0 +1,230 @@
+mongo
+use studentbatch
+switched to db studentbatch
+db.students.insertMany([
+...     {
+...     "id": "100",
+...     "name": "Sanjay",
+...     },
+...     {
+...     "id": "101",
+...     "name": "Varhese ",
+...
+...     },
+...     {
+...     "id": "102",
+...     "name": "Vimal",
+...
+...     },
+...     {
+...     "id": "103",
+...     "name": "Santhosh",
+...
+...     },
+...     {
+...     "id": "104",
+...     "name": "Sathish",
+...
+...     },
+...     {
+...     "id": "105",
+...     "name": "Salim",
+...
+...     },
+...     {
+...     "id": "107",
+...     "name": "Sam",
+...
+...     },
+...     {
+...
+...     "id": "108",
+...     "name": "Tharun",
+...     }
+...     ]); 
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61d87665917ab606c5d3cad7"),
+                ObjectId("61d87665917ab606c5d3cad8"),
+                ObjectId("61d87665917ab606c5d3cad9"),
+                ObjectId("61d87665917ab606c5d3cada"),
+                ObjectId("61d87665917ab606c5d3cadb"),
+                ObjectId("61d87665917ab606c5d3cadc"),
+                ObjectId("61d87665917ab606c5d3cadd"),
+                ObjectId("61d87665917ab606c5d3cade")
+        ]
+}
+
+db.batch.insertMany([
+...         {
+...         "id": "100",
+...         "batch": "33wd",
+...         },
+...         {
+...         "id": "101",
+...         "batch": "b33we ",
+...
+...         },
+...         {
+...         "id": "102",
+...         "batch": "b32wd",
+...
+...         },
+...         {
+...         "id": "103",
+...         "batch": "b32we",
+...
+...         },
+...         {
+...         "id": "104",
+...         "batch": "b31wd",
+...
+...         },
+...         {
+...         "id": "105",
+...         "batch": "b31we",
+...
+...         },
+...         {
+...         "id": "107",
+...         "batch": "b30wd",
+...
+...         },
+...         {
+...
+...         "id": "108",
+...         "batch": "b30we",
+...         }
+...         ]); 
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61d87757917ab606c5d3cadf"),
+                ObjectId("61d87757917ab606c5d3cae0"),
+                ObjectId("61d87757917ab606c5d3cae1"),
+                ObjectId("61d87757917ab606c5d3cae2"),
+                ObjectId("61d87757917ab606c5d3cae3"),
+                ObjectId("61d87757917ab606c5d3cae4"),
+                ObjectId("61d87757917ab606c5d3cae5"),
+                ObjectId("61d87757917ab606c5d3cae6")
+        ]
+}
+
+ db.task.insertMany([
+...         {
+...         "id": "100",
+...         "task": "html-form",
+...         },
+...         {
+...         "id": "101",
+...         "task": "bootstrap-design",
+...
+...         },
+...         {
+...         "id": "102",
+...         "task": "react-page",
+...
+...         },
+...         {
+...         "id": "103",
+...         "task": "Dom-form",
+...
+...         },
+...         {
+...         "id": "104",
+...         "task": "Db-model",
+...
+...         },
+...         {
+...         "id": "105",
+...         "task": "react-router",
+...
+...         },
+...         {
+...         "id": "107",
+...         "task": "arow-function",
+...
+...         },
+...         {
+...
+...         "id": "108",
+...         "task": "map-filter-reduce",
+...         }
+...         ]); 
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61d877e3917ab606c5d3cae7"),
+                ObjectId("61d877e3917ab606c5d3cae8"),
+                ObjectId("61d877e3917ab606c5d3cae9"),
+                ObjectId("61d877e3917ab606c5d3caea"),
+                ObjectId("61d877e3917ab606c5d3caeb"),
+                ObjectId("61d877e3917ab606c5d3caec"),
+                ObjectId("61d877e3917ab606c5d3caed"),
+                ObjectId("61d877e3917ab606c5d3caee")
+        ]
+}
+
+db.mentor.insertMany([
+...         {
+...         "id": "100",
+...         "mentor": "Lavish",
+...         },
+...         {
+...         "id": "101",
+...         "mentor": "Raghav",
+...
+...         },
+...         {
+...         "id": "102",
+...         "mentor": "Raghul",
+...
+...         },
+...         {
+...         "id": "103",
+...         "mentor": "Sai-Mohan",
+...      
+...         },
+...         {
+...         "id": "104",
+...         "mentor": "Banuprakash",
+...
+...         },
+...         {
+...         "id": "105",
+...         "mentor": "Maheshwaren",
+...
+...         },
+...         {
+...         "id": "107",
+...         "mentor": "Arun",
+...
+...         },
+...         {
+...
+...         "id": "108",
+...         "mentor": "Arun Kumar",
+...         }
+...         ]); 
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61d87884917ab606c5d3caef"),
+                ObjectId("61d87884917ab606c5d3caf0"),
+                ObjectId("61d87884917ab606c5d3caf1"),
+                ObjectId("61d87884917ab606c5d3caf2"),
+                ObjectId("61d87884917ab606c5d3caf3"),
+                ObjectId("61d87884917ab606c5d3caf4"),
+                ObjectId("61d87884917ab606c5d3caf5"),
+                ObjectId("61d87884917ab606c5d3caf6")
+        ]
+}
+
+use studentbatch
+switched to db studentbatch
+> show collections
+batch
+mentor
+students
+task
